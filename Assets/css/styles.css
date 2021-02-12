@@ -12,24 +12,27 @@ header{
     margin-bottom: 10px;
 }
 
-.start-btn{
+.startButton{
     background-color: whitesmoke;
     padding: 10px;
     border: 1px solid whitesmoke;
     margin-top: 20px;
     font-size: 25px;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 10%;
+}
+
+.time{
+    font-size: 20px;
+    float: right;
+    margin-right: 50px;
 }
 
 .container{
     background-color:white;
     padding: 15px;
     border-radius: 10px;
-}
-
-.time{
-    font-size: 20px;
+    clear: both;
 }
 
 .row{
@@ -38,7 +41,7 @@ header{
 
 .questions{
     background-color:cadetblue;
-    padding: 20px;
+    padding: 15px;
     border-radius: 10px;
     color: white;
     font-weight: bolder;
@@ -65,8 +68,8 @@ header{
 }
 
 .resul{
-    background-color: grey;
-    padding: 20px;
+    background-color: rgb(158, 158, 158);
+    padding: 15px;
     border-radius: 10px;
     margin-top: 10px;
 }
