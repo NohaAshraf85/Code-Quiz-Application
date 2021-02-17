@@ -21,6 +21,8 @@ var playerNameInputEl = document.querySelector("#nameInput");
 var emailInputEl = document.querySelector("#emailInput");
 var highScores=[];
 var scorePage = document.querySelector(".highScoreDisplay");
+var clearScoreBtn = document.querySelector("#clearScoreBtn");
+var goBack = document.querySelector("#GoBack");
 
 
 // Quiz variables
@@ -209,7 +211,7 @@ function renderMessage() {
   var storedHighscores = JSON.parse(localStorage.getItem("playersInformation"));
   if (storedHighscores !== null) {
     document.querySelector("#highscoreul").innerHTML="";
-    for(var k=0;k<5;k++)
+    for(var k=0;k<5 && k<storedHighscores.length;k++)
     {
       document.querySelector("#highscoreul").innerHTML +="<li>"+storedHighscores[k]. playerNameInputEl +" Scored: "+storedHighscores[k].scoreResult+"</li>";
     }
@@ -222,6 +224,8 @@ function renderMessage() {
 
 function init() {
   i=0;
+  correct=0;
+  wrong=0;
   scoreEl.setAttribute("style", "display: none");
   document.querySelector("#highscore").setAttribute("style", "display: none");
   var storedHighscores = JSON.parse(localStorage.getItem("playersInformation"));
@@ -231,3 +235,13 @@ function init() {
   }
 
 }
+
+clearScoreBtn.addEventListener("click", clearScore);
+
+function clearScore(){
+    highScores=[];
+    localStorage.setItem("playersInformation", JSON.stringify(highScores));
+    renderMessage();
+}
+
+goBack.addEventListener("click", startQuiz);
