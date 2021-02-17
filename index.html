@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Code Quiz Application</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="./Assets/css/styles.css">
-
+    <title>Code Quiz Challenge Application</title>
 </head>
 <body>
+
     <header>
         <div class="headerTitle">Coding Quiz Challenge</div>
         <div>
@@ -37,35 +37,56 @@
                 </div>
                 <div class="answers">
                     <div class='col-12 '> 
-                    <button class='answerbtn' id='0' onclick="questionAnswered">Answer1</button>
-                    <button class='answerbtn' id='1'>Answer2</button>
-                    <button class='answerbtn'  id='2'>Answer3</button>
-                    <button class='answerbtn'  id='3'>Answer4</button>
+                    <button class='answerbtn' id="0" onclick="questionAnswered">Answer1</button>
+                    <button class='answerbtn' id="1">Answer2</button>
+                    <button class='answerbtn' id="2">Answer3</button>
+                    <button class='answerbtn' id="3">Answer4</button>
                     </div>
                 </div>
               
-                <div class="col-12 resul">
-                    <h2>Correct: <span class="correct">0 </span> </h2>
-                    <h2>Wrong: <span class="wrong">0</span></h2>                
+                <div class="col-12 result" id="scoreMessage" style="display: none;">
+                    <h2 id="outcome"></h2>
+                    <!-- <h2>Correct: <span class="correct" id="correcrAnswer">0 </span> </h2>
+                    <h2>Wrong: <span class="wrong"id="wrongAnswer">0</span></h2>                 -->
                 </div>
             </div>
 
             <div class="row" id="scoreBoard" style="display: none;">
                 <div  class="col-12">
-                    <form>
-                        <label>User Name</label>
-                        <input></input>
-                        <label>email</label>
-                        <input></input>
-                        <button id="submitScoreBtn">Submit</button>
+                    <h1 id="scoreResult"></h1>
+                    <form id="formInput">
+                        <div class="formData">
+                            <label class="formLabel" id="name">User Name: </label>
+                            <input id="nameInput"></input>
+                        </div>
+
+                        <div class="input">
+                        <label class="formLabel" id="email">email: </label>
+                        <input id="emailInput"></input>
+                        </div>
+
+                        <div class="input">
+                            <button id="submitScoreBtn">Submit</button>
+                        </div>                        
                     </form>
                 </div> 
             </div>
-            
-        </div>
+
+            <div class="row highScoreDisplay" id="highscore" style="display: none;">
+                <div  class="col-12">
+                    <ul id="highscoreul">
+                        <li>aa@aa.com Scored: 3</li>
+                        <li>aa@aa.com Scored: 3</li>
+                        <li>aa@aa.com Scored: 3</li>
+                        <li>hell Scored: 3</li>
+                        <li>aaa@aaa.com Scored: 3</li>
+                    </ul>
+                   
+                </div> 
+            </div>
+        </div>  
     </main>
 
-    <script src="./Assets/scripts/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="./Assets/scripts/script.js"></script>
 </body>
 </html>

@@ -52,7 +52,7 @@ h1{
     margin: 5px;
 }
 
-.resul{
+.result{
     background-color: rgb(158, 158, 158);
     padding: 15px;
     border-radius: 10px;
@@ -65,3 +65,48 @@ h1{
 h2{
     font-size: 15px;
 }
+
+#formInput{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    }
+    
+.formData{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input{
+    width: 100%;
+}
+
+#scoreResult{
+    font-size: 24px;    
+}
+
+.formLabel{
+    font-weight: bolder;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#submitScoreBtn{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 25%;
+    background-color: white;
+    border: solid 1px grey;
+}
+
+li {
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color:cadetblue;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5;
+  }
+
