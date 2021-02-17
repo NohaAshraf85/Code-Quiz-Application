@@ -14,6 +14,11 @@ This code quiz application is an exciting quick implementation for a quiz exampl
 4. If your answer is wrong, you lose 5 seconds from the total time remaining
 5. Quiz is over when the time remaining is 0 or you answer all questions correctly
 
+## How it Works:
+1. Accessing the application the user is presented with the homepage that includes the set of rules for taking the quiz
+
+![Homepage](./Assets/images/Homepage.png)
+
 
 
 
