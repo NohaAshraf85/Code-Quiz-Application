@@ -1,5 +1,7 @@
 # Code-Quiz-Application
-This code quiz application is an exciting quick implementation for a quiz example that has multiple choices per question:
+This code quiz application is an exciting quick implementation for a quiz example that has multiple choices per question.
+
+The applicaiton can be accessed through: [Code Quiz](https://nohaashraf85.github.io/Code-Quiz-Application/)
 
 ## Technologies Used:
 * HTML 
